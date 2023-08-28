@@ -1,0 +1,40 @@
+{
+	"name": "ds_sqlservertable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQLServer",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Language_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Text",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Category",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Comment",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "mdm",
+			"table": "tblDBErrors"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

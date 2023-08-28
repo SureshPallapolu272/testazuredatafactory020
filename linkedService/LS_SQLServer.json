@@ -1,0 +1,17 @@
+{
+	"name": "LS_SQLServer",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=testsqlservervm;initial catalog=testdb",
+			"userName": "Suresh",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIxMWRlOGMxNy04OWQwLTQ0ZjItOTViMC00MWVjOGY4NTI5MmUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SelfHosted-IR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

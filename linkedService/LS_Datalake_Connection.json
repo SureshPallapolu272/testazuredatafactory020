@@ -1,0 +1,19 @@
+{
+	"name": "LS_Datalake_Connection",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://testdatalakege2020.dfs.core.windows.net/",
+			"accountKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_KeyvaultLinkedService",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "ADLSAccountkey"
+			}
+		}
+	}
+}
