@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "testazuredatafactory020"
+		},
+		"LS_BlobConnection_connectionString": {
+			"value": ""
+		},
+		"LS_DatalakeGen2Connection_accountKey": {
+			"value": ""
+		},
+		"LS_SQLServer_connectionString": {
+			"value": "Integrated Security=True;Data Source=testsqlservervm;Initial Catalog=testdb"
+		},
+		"LS_SQLServer_password": {
+			"value": ""
+		},
+		"LS_BLOB_Connection_properties_typeProperties_connectionString_secretName": {
+			"value": "BlobStorageconnectionString"
+		},
+		"LS_DatalakeGen2Connection_properties_typeProperties_url": {
+			"value": "https://testdatalakege2020.dfs.core.windows.net/"
+		},
+		"LS_Datalake_Connection_properties_typeProperties_url": {
+			"value": "https://testdatalakege2020.dfs.core.windows.net/"
+		},
+		"LS_HTTPConnection_properties_typeProperties_url": {
+			"value": "@{linkedService().baseURL}"
+		},
+		"LS_KeyvaultLinkedService_properties_typeProperties_baseUrl": {
+			"value": "https://testkeyvaultdemo021.vault.azure.net/"
+		},
+		"LS_SQL Connection_properties_typeProperties_connectionString_secretName": {
+			"value": "SQLConnectionString"
+		},
+		"LS_SQLServer_properties_typeProperties_userName": {
+			"value": "Suresh"
+		},
+		"EVENT_TRIGGER_properties_typeProperties_scope": {
+			"value": "/subscriptions/0b09d9a2-10b0-4bdb-966c-fa3ebfa3ba0a/resourceGroups/TestRG002/providers/Microsoft.Storage/storageAccounts/testblobstorage020"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
